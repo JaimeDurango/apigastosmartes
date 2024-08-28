@@ -1,10 +1,11 @@
+#datos para la conexion a DB
+dataBaseName="gestordb"
 userName="root"
+userPassword=""
+connectionPort=3306
+server="localhost"
 
-'''userDB="Usuario"
-userAge=35
-userHeight=1.62
-userIsHappy=True
-userPassword=None
+#creando la conexion
+dataBaseConection=f"mysql+mysqlconnector://{userName}:{userPassword}@{server}:{connectionPort}/{dataBaseName}"
 
-userCity = input("En que Ciudad Naciste: ")
-'''
+print(dataBaseConection)
